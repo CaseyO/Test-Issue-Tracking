@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @user_pic.id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @user_pic.title %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%= @user_pic.caption %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= @user_pic.tags %>
+</p>
+
+<p>
+  <b>Img-path:</b>
+  <%= @user_pic.img-path %>
+</p>
+
+<p>
+  <b>Date-modified:</b>
+  <%= @user_pic.date-modified %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_pic_path(@user_pic) %> |
+<%= link_to 'Back', user_pics_path %>

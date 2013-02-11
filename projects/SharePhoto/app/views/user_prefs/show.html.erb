@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @user_pref.id %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user_pref.email %>
+</p>
+
+<p>
+  <b>Chat:</b>
+  <%= @user_pref.chat %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_pref_path(@user_pref) %> |
+<%= link_to 'Back', user_prefs_path %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @user_relation.user_id %>
+</p>
+
+<p>
+  <b>Relation:</b>
+  <%= @user_relation.relation_id %>
+</p>
+
+<p>
+  <b>Enum:</b>
+  <%= @user_relation.enum %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_relation_path(@user_relation) %> |
+<%= link_to 'Back', user_relations_path %>

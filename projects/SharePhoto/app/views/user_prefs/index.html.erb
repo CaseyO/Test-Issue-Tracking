@@ -1,0 +1,27 @@
+<h1>Listing user_prefs</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Email</th>
+    <th>Chat</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_prefs.each do |user_pref| %>
+  <tr>
+    <td><%= user_pref.id %></td>
+    <td><%= user_pref.email %></td>
+    <td><%= user_pref.chat %></td>
+    <td><%= link_to 'Show', user_pref %></td>
+    <td><%= link_to 'Edit', edit_user_pref_path(user_pref) %></td>
+    <td><%= link_to 'Destroy', user_pref, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User pref', new_user_pref_path %>
